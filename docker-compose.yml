@@ -1,0 +1,8 @@
+version: "3"
+services :
+   redis:
+    build: ./redis #编译
+    ports:
+      - "6379:6379" # 绑定服务器端口:容器端口
+    volumes:
+      - /var/redis:/data
